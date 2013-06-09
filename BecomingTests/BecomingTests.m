@@ -44,7 +44,7 @@
 {
     HasSelectorFoo * foo = [[HasSelectorFoo alloc] init];
     
-    [foo become:[[HasSelectorBar alloc]class]];
+    [foo become:[HasSelectorBar class]];
     NSLog(@"%@ %@",[foo class], [foo className]);
     STAssertTrue([@"HasSelectorBar" isEqualToString:[foo className]], @"Expecting foo to become Bar");
     STAssertEquals(@"Bar", [foo tellMe], @"Foo returns Bar now");
@@ -54,7 +54,7 @@
 {
     HasSelectorBar * bar = [[HasSelectorBar alloc] init];
     
-    [bar become:[[HasSelectorFoo alloc]class]];
+    [bar become:[HasSelectorFoo class]];
     NSLog(@"%@ %@",[bar class], [bar className]);
     STAssertTrue([@"HasSelectorFoo" isEqualToString:[bar className]], @"Expecting bar to become Foo");
     STAssertEquals(@"Foo", [bar tellMe], @"Bar returns Foo now");
@@ -63,7 +63,7 @@
 - (void) testCallingNewMethodOnNewType
 {
     id foo = [[HasSelectorBar alloc] init];
-    [foo become:[[HasSelectorFoo alloc] class]];
+    [foo become:[HasSelectorFoo class]];
     [foo callFoo];
 }
 
@@ -72,7 +72,7 @@
     HasANumber * hasNumber = [[HasANumber alloc] init];
     [hasNumber setNumber: @10];
     id toBecome = hasNumber;
-    [toBecome become:[[MultipliesByTwo alloc]class]];
+    [toBecome become:[MultipliesByTwo class]];
     
     STAssertEqualObjects(@20, [toBecome newNumber], @"It should multiply by 2");
 }
@@ -82,7 +82,7 @@
     HasANumber * hasNumber = [[HasANumber alloc] init];
     hasNumber.number = @10;
     id toBecome = hasNumber;
-    [toBecome become:[[HasANumberTimesThree alloc]class]];
+    [toBecome become:[HasANumberTimesThree class]];
     
     STAssertEqualObjects(@30, [toBecome number], @"It should multiply by 3");
 }
@@ -92,7 +92,7 @@
     HasANumber * hasNumber = [[HasANumber alloc] init];
     hasNumber.number = @10;
     id toBecome = hasNumber;
-    [toBecome become:[[HasANumberTimesThree alloc]class]];
+    [toBecome become:[HasANumberTimesThree class]];
     
     STAssertEqualObjects(@30, [toBecome number], @"It should multiply by 3");
 

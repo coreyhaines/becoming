@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Becoming.h"
 
-@interface HasANumber : Becoming
+@interface HasANumber : NSObject
 {
     NSNumber *number;
 }

@@ -7,6 +7,8 @@
 //
 
 #import "MultipliesByTwo.h"
+#import "NSObject+CanBecome.h"
+
 
 @implementation MultipliesByTwo
 - (NSNumber *) newNumber

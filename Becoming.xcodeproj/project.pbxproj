@@ -20,6 +20,8 @@
 		8FBD07CD176409F4005140EF /* MultipliesByTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD07CC176409F4005140EF /* MultipliesByTwo.m */; };
 		8FBD07D017641E4A005140EF /* HasANumberTimesThree.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBD07CE17641E4A005140EF /* HasANumberTimesThree.h */; };
 		8FBD07D117641E4A005140EF /* HasANumberTimesThree.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD07CF17641E4A005140EF /* HasANumberTimesThree.m */; };
+		8FCE1C6617650204008CEA0E /* NSObject+CanBecome.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE1C6417650204008CEA0E /* NSObject+CanBecome.m */; };
+		8FCE1C6717650204008CEA0E /* NSObject+CanBecome.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCE1C6517650204008CEA0E /* NSObject+CanBecome.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		8FBD07CC176409F4005140EF /* MultipliesByTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipliesByTwo.m; sourceTree = "<group>"; };
 		8FBD07CE17641E4A005140EF /* HasANumberTimesThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasANumberTimesThree.h; sourceTree = "<group>"; };
 		8FBD07CF17641E4A005140EF /* HasANumberTimesThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasANumberTimesThree.m; sourceTree = "<group>"; };
+		8FCE1C6417650204008CEA0E /* NSObject+CanBecome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CanBecome.m"; sourceTree = "<group>"; };
+		8FCE1C6517650204008CEA0E /* NSObject+CanBecome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CanBecome.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 		8FBD079F1763E4E6005140EF /* Becoming */ = {
 			isa = PBXGroup;
 			children = (
+				8FCE1C6417650204008CEA0E /* NSObject+CanBecome.m */,
+				8FCE1C6517650204008CEA0E /* NSObject+CanBecome.h */,
 				8FBD07A21763E4E6005140EF /* Becoming.h */,
 				8FBD07A31763E4E6005140EF /* Becoming.m */,
 				8FBD07A01763E4E6005140EF /* Supporting Files */,
@@ -175,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FBD07D017641E4A005140EF /* HasANumberTimesThree.h in Headers */,
+				8FCE1C6717650204008CEA0E /* NSObject+CanBecome.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +285,7 @@
 			files = (
 				8FBD07A41763E4E6005140EF /* Becoming.m in Sources */,
 				8FBD07D117641E4A005140EF /* HasANumberTimesThree.m in Sources */,
+				8FCE1C6617650204008CEA0E /* NSObject+CanBecome.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "BecomingTests/HasSelectorFoo.h"
-         timestampString = "392434057.406873"
+         timestampString = "392488254.297685"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "13"
-         endingLineNumber = "13"
+         startingLineNumber = "12"
+         endingLineNumber = "12"
          landmarkName = "-tellMe"
          landmarkType = "4">
       </FileBreakpoint>

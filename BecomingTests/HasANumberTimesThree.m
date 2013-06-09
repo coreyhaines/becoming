@@ -7,10 +7,12 @@
 //
 
 #import "HasANumberTimesThree.h"
+#import "NSObject+CanBecome.h"
+
 
 @implementation HasANumberTimesThree
 -(NSNumber *) number{
-    int result = [[super performSelectorAsPreviousType:@selector(number)] intValue] * 3;
+    int result = [[self performSelectorAsPreviousType:@selector(number)] intValue] * 3;
     return [NSNumber numberWithInt:result];
 }
 @end

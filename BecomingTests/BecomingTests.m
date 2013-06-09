@@ -12,6 +12,7 @@
 #import "HasANumber.h"
 #import "MultipliesByTwo.h"
 #import "HasANumberTimesThree.h"
+#import "NSObject+CanBecome.h"
 
 @implementation BecomingTests
 
@@ -99,4 +100,34 @@
     [toBecome unbecome];
     STAssertEqualObjects(@10, [toBecome number], @"It should be back to original");
 }
+
+-(void) testTwoObjectsBecomingDoNotStepOnEachOther
+{
+    HasANumber *n1 = [[HasANumber alloc]init];
+    [n1 setNumber:@10];
+    id number1 = n1;
+    
+    HasANumber *n2 = [[HasANumber alloc]init];
+    [n2 setNumber:@100];
+    id number2 = n2;
+    
+    [number1 become:[MultipliesByTwo class]];
+    [number2 become:[HasANumberTimesThree class]];
+    
+    STAssertEqualObjects(@20, [number1 newNumber], @"Number 1 should be multiplied by 2");
+    STAssertEqualObjects(@300, [number2 number], @"Number 2 shold be multiplied by 3");
+    
+    
+    [number1 unbecome];
+    [number2 unbecome];
+
+    STAssertEqualObjects(@10, [number1 number], @"Number 1 has unbecome to its old value");
+    STAssertEqualObjects(@100, [number2 number], @"Number 2 has unbecome to its old value");
+    
+    
+    
+    
+    
+}
+
 @end

@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Becoming.h"
 
-@interface MultipliesByTwo : Becoming
+@interface MultipliesByTwo : NSObject
 - (NSNumber *) newNumber;
 @end

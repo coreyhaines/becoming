@@ -23,7 +23,7 @@
 - (void) unbecome
 {
     isa = _previousType;
-    _previousType = nil;
+//    _previousType = nil;
 }
 
 - (id) performSelectorAsPreviousType:(SEL)selector

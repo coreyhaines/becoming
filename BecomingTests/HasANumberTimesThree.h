@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Becoming.h"
 
-@interface HasANumberTimesThree : Becoming
+@interface HasANumberTimesThree : NSObject
 -(NSNumber *) number;
 @end

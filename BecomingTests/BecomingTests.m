@@ -68,7 +68,7 @@
 
 - (void) testNewImplementationCanUseOldTypesStuff
 {
-    HasANumber * hasNumber = [[[HasANumber alloc] init]];
+    HasANumber * hasNumber = [[HasANumber alloc] init];
     [hasNumber setNumber: @10];
     id toBecome = hasNumber;
     [toBecome become:[[MultipliesByTwo alloc]class]];

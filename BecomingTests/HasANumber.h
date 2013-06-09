@@ -10,6 +10,9 @@
 #import "Becoming.h"
 
 @interface HasANumber : Becoming
-    @property NSNumber *number;
--(void) setNumber:(NSNumber *)number;
+{
+    NSNumber *number;
+}
+-(void) setNumber:(NSNumber *)newNumber;
+-(NSNumber *) number;
 @end

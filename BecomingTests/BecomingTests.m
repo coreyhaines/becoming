@@ -11,6 +11,7 @@
 #import "HasSelectorFoo.h"
 #import "HasANumber.h"
 #import "MultipliesByTwo.h"
+#import "HasANumberTimesThree.h"
 
 @implementation BecomingTests
 
@@ -76,15 +77,15 @@
     STAssertEqualObjects(@20, [toBecome newNumber], @"It should multiply by 2");
 }
 
-//-(void) testNewTypeCanHaveMethodWithSameNameAsOldTypeAndStillAccess
-//{
-//    HasANumber * hasNumber = [[HasANumber alloc] init];
-//    hasNumber.number = @10;
-//    id toBecome = hasNumber;
-//    [toBecome become:[[HasANumberTimesThree alloc]class]];
-//    
-//    STAssertEqualObjects(@30, [toBecome number], @"It should multiply by 3");
-//}
+-(void) testNewTypeCanHaveMethodWithSameNameAsOldTypeAndStillAccess
+{
+    HasANumber * hasNumber = [[HasANumber alloc] init];
+    hasNumber.number = @10;
+    id toBecome = hasNumber;
+    [toBecome become:[[HasANumberTimesThree alloc]class]];
+    
+    STAssertEqualObjects(@30, [toBecome number], @"It should multiply by 3");
+}
 
 
 @end

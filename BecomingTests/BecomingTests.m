@@ -44,6 +44,7 @@
     [foo become:[[HasSelectorBar alloc]class]];
     NSLog(@"%@ %@",[foo class], [foo className]);
     STAssertTrue([@"HasSelectorBar" isEqualToString:[foo className]], @"Expecting foo to become Bar");
+    STAssertEquals(@"Bar", [foo tellMe], @"Foo returns Bar now");
 }
 
 - (void) testMakingBarAFoo
@@ -53,6 +54,7 @@
     [bar become:[[HasSelectorFoo alloc]class]];
     NSLog(@"%@ %@",[bar class], [bar className]);
     STAssertTrue([@"HasSelectorFoo" isEqualToString:[bar className]], @"Expecting bar to become Foo");
+    STAssertEquals(@"Foo", [bar tellMe], @"Bar returns Foo now");
 }
 
 

@@ -7,6 +7,8 @@
 //
 
 #import "BecomingTests.h"
+#import "HasSelectorBar.h"
+#import "HasSelectorFoo.h"
 
 @implementation BecomingTests
 
@@ -24,9 +26,15 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testUnbecomingReturns
 {
-    STFail(@"Unit tests are not implemented yet in BecomingTests");
+    HasSelectorBar * bar = [[HasSelectorBar alloc] init];
+    
+    STAssertEquals(@"Bar", [bar tellMe], @"Bar returns Bar");
+    
+    HasSelectorFoo * foo = [[HasSelectorFoo alloc] init];
+    
+    STAssertEquals(@"Foo", [foo tellMe], @"Foo returns Foo");
 }
 
 @end

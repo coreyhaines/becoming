@@ -13,4 +13,8 @@
 {
     return @"Foo";
 }
+-(void) callFoo
+{
+    
+}
 @end

@@ -11,4 +11,5 @@
 
 @interface HasSelectorFoo : Becoming
 - (NSString *) tellMe;
+-(void) callFoo;
 @end

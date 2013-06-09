@@ -16,6 +16,8 @@
 		8FBD07B91763E4E6005140EF /* BecomingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD07B81763E4E6005140EF /* BecomingTests.m */; };
 		8FBD07C41763E653005140EF /* HasSelectorFoo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD07C31763E653005140EF /* HasSelectorFoo.m */; };
 		8FBD07C71763E65D005140EF /* HasSelectorBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD07C61763E65D005140EF /* HasSelectorBar.m */; };
+		8FBD07CA176408B6005140EF /* HasANumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD07C9176408B6005140EF /* HasANumber.m */; };
+		8FBD07CD176409F4005140EF /* MultipliesByTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD07CC176409F4005140EF /* MultipliesByTwo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,10 @@
 		8FBD07C31763E653005140EF /* HasSelectorFoo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasSelectorFoo.m; sourceTree = "<group>"; };
 		8FBD07C51763E65D005140EF /* HasSelectorBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasSelectorBar.h; sourceTree = "<group>"; };
 		8FBD07C61763E65D005140EF /* HasSelectorBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasSelectorBar.m; sourceTree = "<group>"; };
+		8FBD07C8176408B6005140EF /* HasANumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasANumber.h; sourceTree = "<group>"; };
+		8FBD07C9176408B6005140EF /* HasANumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasANumber.m; sourceTree = "<group>"; };
+		8FBD07CB176409F4005140EF /* MultipliesByTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipliesByTwo.h; sourceTree = "<group>"; };
+		8FBD07CC176409F4005140EF /* MultipliesByTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipliesByTwo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +137,12 @@
 		8FBD07B11763E4E6005140EF /* BecomingTests */ = {
 			isa = PBXGroup;
 			children = (
+				8FBD07CB176409F4005140EF /* MultipliesByTwo.h */,
+				8FBD07CC176409F4005140EF /* MultipliesByTwo.m */,
 				8FBD07B71763E4E6005140EF /* BecomingTests.h */,
 				8FBD07B81763E4E6005140EF /* BecomingTests.m */,
+				8FBD07C8176408B6005140EF /* HasANumber.h */,
+				8FBD07C9176408B6005140EF /* HasANumber.m */,
 				8FBD07B21763E4E6005140EF /* Supporting Files */,
 				8FBD07C21763E653005140EF /* HasSelectorFoo.h */,
 				8FBD07C31763E653005140EF /* HasSelectorFoo.m */,
@@ -270,6 +280,8 @@
 				8FBD07B91763E4E6005140EF /* BecomingTests.m in Sources */,
 				8FBD07C41763E653005140EF /* HasSelectorFoo.m in Sources */,
 				8FBD07C71763E65D005140EF /* HasSelectorBar.m in Sources */,
+				8FBD07CA176408B6005140EF /* HasANumber.m in Sources */,
+				8FBD07CD176409F4005140EF /* MultipliesByTwo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  Becoming.h
+//  MultipliesByTwo.h
 //  Becoming
 //
 //  Created by coreyhaines on 6/8/13.
@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Becoming.h"
 
-@interface Becoming : NSObject
-- (void) become:(Class) thisClass;
-- (id) performSelectorAsPreviousType:(SEL)selector;
+@interface MultipliesByTwo : Becoming
+- (NSNumber *) newNumber;
 @end

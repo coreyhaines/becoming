@@ -9,6 +9,8 @@
 #import "BecomingTests.h"
 #import "HasSelectorBar.h"
 #import "HasSelectorFoo.h"
+#import "HasANumber.h"
+#import "MultipliesByTwo.h"
 
 @implementation BecomingTests
 
@@ -57,6 +59,20 @@
     STAssertEquals(@"Foo", [bar tellMe], @"Bar returns Foo now");
 }
 
+- (void) testCallingNewMethodOnNewType
+{
+    id foo = [[HasSelectorBar alloc] init];
+    [foo become:[[HasSelectorFoo alloc] class]];
+    [foo callFoo];
+}
 
-
+- (void) testNewImplementationCanUseOldTypesStuff
+{
+    HasANumber * hasNumber = [[HasANumber alloc] init];
+    hasNumber.number = @10;
+    id toBecome = hasNumber;
+    [toBecome become:[[MultipliesByTwo alloc]class]];
+    
+    STAssertEqualObjects(@20, [toBecome newNumber], @"It should multiply by 2");
+}
 @end

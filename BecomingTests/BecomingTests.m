@@ -87,5 +87,16 @@
     STAssertEqualObjects(@30, [toBecome number], @"It should multiply by 3");
 }
 
+-(void) testCanUnbecome
+{
+    HasANumber * hasNumber = [[HasANumber alloc] init];
+    hasNumber.number = @10;
+    id toBecome = hasNumber;
+    [toBecome become:[[HasANumberTimesThree alloc]class]];
+    
+    STAssertEqualObjects(@30, [toBecome number], @"It should multiply by 3");
 
+    [toBecome unbecome];
+    STAssertEqualObjects(@10, [toBecome number], @"It should be back to original");
+}
 @end

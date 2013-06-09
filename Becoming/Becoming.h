@@ -10,5 +10,6 @@
 
 @interface Becoming : NSObject
 - (void) become:(Class) thisClass;
+- (void) unbecome;
 - (id) performSelectorAsPreviousType:(SEL)selector;
 @end

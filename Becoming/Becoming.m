@@ -20,6 +20,11 @@
     _previousType = isa;
     isa = thisClass;
 }
+- (void) unbecome
+{
+    isa = _previousType;
+    _previousType = nil;
+}
 
 - (id) performSelectorAsPreviousType:(SEL)selector
 {

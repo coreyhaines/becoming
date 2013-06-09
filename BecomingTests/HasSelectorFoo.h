@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Becoming.h"
 
-@interface HasSelectorFoo : NSObject
+@interface HasSelectorFoo : Becoming
 - (NSString *) tellMe;
-
-- (void) become:(Class)thisClass;
 @end

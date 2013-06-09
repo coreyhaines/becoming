@@ -9,5 +9,8 @@
 #import "Becoming.h"
 
 @implementation Becoming
-
+- (void) become:(Class)thisClass
+{
+    isa = thisClass;
+}
 @end

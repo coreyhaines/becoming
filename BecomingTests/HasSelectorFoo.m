@@ -13,8 +13,4 @@
 {
     return @"Foo";
 }
-- (void) become:(Class)thisClass
-{
-    isa = thisClass;
-}
 @end

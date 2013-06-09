@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface Becoming : NSObject
-
+- (void) become:(Class) thisClass;
 @end

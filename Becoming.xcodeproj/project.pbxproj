@@ -18,6 +18,8 @@
 		8FBD07C71763E65D005140EF /* HasSelectorBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD07C61763E65D005140EF /* HasSelectorBar.m */; };
 		8FBD07CA176408B6005140EF /* HasANumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD07C9176408B6005140EF /* HasANumber.m */; };
 		8FBD07CD176409F4005140EF /* MultipliesByTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD07CC176409F4005140EF /* MultipliesByTwo.m */; };
+		8FBD07D017641E4A005140EF /* HasANumberTimesThree.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBD07CE17641E4A005140EF /* HasANumberTimesThree.h */; };
+		8FBD07D117641E4A005140EF /* HasANumberTimesThree.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD07CF17641E4A005140EF /* HasANumberTimesThree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		8FBD07C9176408B6005140EF /* HasANumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasANumber.m; sourceTree = "<group>"; };
 		8FBD07CB176409F4005140EF /* MultipliesByTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipliesByTwo.h; sourceTree = "<group>"; };
 		8FBD07CC176409F4005140EF /* MultipliesByTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipliesByTwo.m; sourceTree = "<group>"; };
+		8FBD07CE17641E4A005140EF /* HasANumberTimesThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasANumberTimesThree.h; sourceTree = "<group>"; };
+		8FBD07CF17641E4A005140EF /* HasANumberTimesThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasANumberTimesThree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 		8FBD07B11763E4E6005140EF /* BecomingTests */ = {
 			isa = PBXGroup;
 			children = (
+				8FBD07CE17641E4A005140EF /* HasANumberTimesThree.h */,
+				8FBD07CF17641E4A005140EF /* HasANumberTimesThree.m */,
 				8FBD07CB176409F4005140EF /* MultipliesByTwo.h */,
 				8FBD07CC176409F4005140EF /* MultipliesByTwo.m */,
 				8FBD07B71763E4E6005140EF /* BecomingTests.h */,
@@ -168,6 +174,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FBD07D017641E4A005140EF /* HasANumberTimesThree.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FBD07A41763E4E6005140EF /* Becoming.m in Sources */,
+				8FBD07D117641E4A005140EF /* HasANumberTimesThree.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +441,7 @@
 				8FBD07BE1763E4E6005140EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FBD07BF1763E4E6005140EF /* Build configuration list for PBXNativeTarget "BecomingTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +450,7 @@
 				8FBD07C11763E4E6005140EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

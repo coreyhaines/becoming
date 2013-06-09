@@ -68,11 +68,23 @@
 
 - (void) testNewImplementationCanUseOldTypesStuff
 {
-    HasANumber * hasNumber = [[HasANumber alloc] init];
-    hasNumber.number = @10;
+    HasANumber * hasNumber = [[[HasANumber alloc] init]];
+    [hasNumber setNumber: @10];
     id toBecome = hasNumber;
     [toBecome become:[[MultipliesByTwo alloc]class]];
     
     STAssertEqualObjects(@20, [toBecome newNumber], @"It should multiply by 2");
 }
+
+//-(void) testNewTypeCanHaveMethodWithSameNameAsOldTypeAndStillAccess
+//{
+//    HasANumber * hasNumber = [[HasANumber alloc] init];
+//    hasNumber.number = @10;
+//    id toBecome = hasNumber;
+//    [toBecome become:[[HasANumberTimesThree alloc]class]];
+//    
+//    STAssertEqualObjects(@30, [toBecome number], @"It should multiply by 3");
+//}
+
+
 @end

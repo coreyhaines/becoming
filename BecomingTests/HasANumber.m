@@ -9,5 +9,8 @@
 #import "HasANumber.h"
 
 @implementation HasANumber
-
+-(void) setNumber:(NSNumber *)number
+{
+    self.number = number;
+}
 @end

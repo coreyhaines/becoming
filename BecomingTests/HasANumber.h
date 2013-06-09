@@ -11,4 +11,5 @@
 
 @interface HasANumber : Becoming
     @property NSNumber *number;
+-(void) setNumber:(NSNumber *)number;
 @end

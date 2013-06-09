@@ -8,13 +8,13 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "BecomingTests/HasSelectorFoo.h"
-         timestampString = "392429770.768971"
+         timestampString = "392430415.290946"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "12"
          endingLineNumber = "12"
-         landmarkName = "@interface HasSelectorFoo"
-         landmarkType = "2">
+         landmarkName = "-tellMe"
+         landmarkType = "4">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

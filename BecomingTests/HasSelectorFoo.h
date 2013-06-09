@@ -10,4 +10,6 @@
 
 @interface HasSelectorFoo : NSObject
 - (NSString *) tellMe;
+
+- (void) become:(Class)thisClass;
 @end

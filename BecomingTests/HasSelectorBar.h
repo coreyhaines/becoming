@@ -10,4 +10,6 @@
 
 @interface HasSelectorBar : NSObject
 - (NSString *) tellMe;
+
+- (void) become:(Class)thisClass;
 @end
